@@ -24,7 +24,7 @@
   <button @click="currentComponent = 'home'">Home</button>
   <button @click="currentComponent = 'about'">About</button>
 
-
+  <h1>{{ $filters.toUppercaseLocal("gabriel") }}</h1>
 
 
 
