@@ -2,7 +2,7 @@
   <AppLayout>
 
     <template v-slot:header>
-      <HelloWorld :msg="message" />
+      <HelloWorld :msg="'Hola emit'" @eventos="handleEventos"/>
     </template>
     <template v-slot:body>
       <img alt="Vue logo" src="./assets/logo.png" />
@@ -36,6 +36,11 @@ export default {
     HelloWorld,
     Button,
     AppLayout
+  },
+  methods:{
+    handleEventos(value){
+        console.log('handle : ',value);
+    }
   }
 }
 </script>
